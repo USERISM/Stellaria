@@ -5,22 +5,22 @@ using UnityEngine;
 public class InventorySystem : MonoBehaviour
 {
     [SerializeField] public Slot[] slots= new Slot[40];
-    [SerializeField] GameObject InventoryUI; 
+    [SerializeField] GameObject InventoryUI;
 
     private void Awake()
     {
-        /*  for(  int i = 0; i< slots.Length; i++)
-         {
-             if (slots[i].ItemInSlot == null)
-             {
-                for(int k = 0; k < slots[i].transform.childCount; k++)
-                 {
-                     slots[i].transform.GetChild(k).gameObject.SetActive(false);
-                 }
-    }
-}*/
-    }
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].ItemInSlot == null)
+            {
+                for (int k = 0; k < slots[i].transform.childCount; k++)
+                {
+                    slots[i].transform.GetChild(k).gameObject.SetActive(false);
+                }
+            }
 
+        }
+    }
 
     private void Update()
     {

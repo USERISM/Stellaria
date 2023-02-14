@@ -37,7 +37,7 @@ public class Slot : MonoBehaviour
 
         icon.texture = ItemInSlot.icon;
         txt_amount.text = $"{AmountInSlot}x";
-    }/*
+    }
     public void OnDrop(PointerEventData eventData)
     {
         GameObject dropped = eventData.pointerDrag;
@@ -54,5 +54,5 @@ public class Slot : MonoBehaviour
         slot.AmountInSlot = 0;
 
         SetStats();
-    }*/
+    }
 }
